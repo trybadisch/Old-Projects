@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<form action="{{ url_for("challenge2") }}" method="post">
+		<input type="text" name="url" placeholder="http://bughunter.lol">
+		<button type="submit">Check</button>
+	</form>
+	{% if alert != None %}
+		<div class=frame>
+			{{ alert|safe }}
+		</div>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for i in range(0,5) %}
+		<a href="?blog={{ loop.index }}">{{ loop.index }}</a>
+	{% endfor %}
+	
+	{% if alert != None %}
+			<br><br>
+			{{ alert | safe }}
+	{% endif %}
+{% endblock %}

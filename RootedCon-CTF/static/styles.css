@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+}
+
+body {
+  background: linear-gradient(#202020, #808080);
+  background-attachment: fixed;
+  color: White;
+  font-family: "Roboto", sans-serif;
+  margin: 25px;
+}
+
+a {
+	color: White;
+	font-weight: bold;
+}
+a:hover {
+	color: SpringGreen;
+}
+
+button {
+	background-color: #808080;
+	color: White;
+	border: 2px solid White;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 100%;
+	margin: 2px;
+}
+button:hover {
+	background-color: SpringGreen;
+	color: White;
+}
+
+input[type=text] {
+	background-color: #808080;
+	color: White;
+	border: 2px solid White;
+	padding: 5px;
+	font-size: 100%;
+	margin: 2px;
+}
+
+input[type=password] {
+	background-color: #808080;
+	color: White;
+	border: 2px solid White;
+	padding: 5px;
+	font-size: 100%;
+	margin: 2px;
+}
+
+input::file-selector-button {
+	background-color: #808080;
+	color: White;
+	border: 2px solid White;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 100%;
+}
+input::file-selector-button:hover {
+	background: SpringGreen;
+	color: White;
+}
+
+input::placeholder {
+	color: lightgrey;
+}
+
+.frame {
+	background: 808080;
+	border: 2px solid White;
+	padding: 5px;
+}
+
+textarea {
+	background-color: #808080;
+	color: White;
+	border: 2px solid White;
+	padding: 5px;
+	font-size: 115%;
+	margin: 2px;
+	margin-top: 10px; margin-bottom: 10px;
+}

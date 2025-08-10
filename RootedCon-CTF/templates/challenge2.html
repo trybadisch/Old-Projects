@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% if alert != None %}
+		{{ alert }}
+	{% else %}
+	<form action="{{ url_for("challenge2") }}" method="post">
+		<table>
+			<tr>
+				<td style="width:120px"><label for="name"><b>Username:</b></label></td>
+				<td><input type="text" name="username" style="width: 99%"></td>
+			</tr>
+			<tr>
+				<td><label for="subject"><b>Subject:</b></label></td>
+			</tr>
+			<tr>
+				<td colspan=2>
+					<textarea type="text" name="subject" style="height:250px; width:500px; max-width:90vw"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2 style="text-align: center">
+					<button type="submit" style="width: 99%; font-size:15px">Send message</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	{% endif %}
+{% endblock %}
